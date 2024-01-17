@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+.concert-one-regular {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.lrgT {
+    font-size: 28px;
+
+}
+
+.fill {
+    filter: invert(100%) sepia(0%) saturate(4767%) hue-rotate(142deg) brightness(126%) contrast(110%);
+}
+
+.pets { 
+    text-align: center;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+}
+
+.directors {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 20px;
+}
+
+.leftOnly {
+    justify-content: flex-start;
+}
+
+.rightOnly {
+    justify-content: flex-end;
+}
+
+#petContainer {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+}
+
+.petImageCont {
+    position: relative;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.436);
+    height: 140px;
+    width: fit-content;
+    top: -156px;
+    left: 245px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.127);
+    border-radius: 5px;
+}
+
+.iconCont {
+    width:30px;
+    height: 30px;
+}
+
+.iconOptionsCont {
+    background-color: rgba(105, 105, 105, 0.558);
+    width:20px;
+    height: 20px;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.211);
+    border-radius: 50%;
+}
+
+#pet1 {
+    position: relative;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    background-color: #ff206e;
+    width: 300px;
+    height: 400px;
+    animation: ease-in-out 2s;
+}
+
+
+
+#pet2 {
+    position: relative;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background-color: #fbff12;
+    width: 300px;
+    height: 400px;
+}
+
+#pet3 {
+    position: relative;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    background-color: #41ead4;
+    width: 300px;
+    height: 400px;
+}
+
+#selector {
+    position: relative;
+    top: -80px;
+}
+
