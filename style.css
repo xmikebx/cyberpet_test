@@ -38,35 +38,17 @@ body {
 .pets { 
     text-align: center;
     border-radius: 10px;
-    /* margin-top: 20px; */
     padding-top: 20px;
 }
-
-/* .directors {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin: 20px;
-} */
-
-/* .leftOnly {
-    justify-content: flex-start;
-}
-
-.rightOnly {
-    justify-content: flex-end;
-} */
 
 #petContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-    /* background-color: darkolivegreen; */
     margin-top: 60px;
     width: 2000px;
     height: fit-content;
-    /* z-index: 3; */
 }
 
 #bgCover {
@@ -76,17 +58,6 @@ margin: 20px;
     height: 100%;
     top: 0px;
 }
-
-/* #petProtectionCover {
-    position: absolute;
-    left: 480px;
-    top: 80px;
-    background-color: crimson;
-    width: 300px;
-    height: 420px;
-    z-index: 1;
-}  */
-
 
 .petImageCont {
     position: relative;
@@ -108,9 +79,6 @@ margin: 20px;
     width: 150px;
     top: 65px;
     left: 15px;
-    /* margin: 2px; */
-    /* padding: 8px; */
-    /* padding-left: 10px; */
     border: 1px solid rgba(0, 0, 0, 0.127);
     border-radius: 5px;
 }
@@ -129,18 +97,14 @@ margin: 20px;
     left: 180px;
     padding-top: 8px;
     padding-left: 8px;
-    /* padding-left: 10px; */
     border: 1px solid rgba(0, 0, 0, 0.127);
     border-radius: 5px;
 }
 
 .iconCont {
-    /* background-color: #ff206e; */
     width: 25px;
     height: 25px;
     padding: 1px;
-    /* border: 2px solid rgb(0, 0, 0); */
-    /* border-radius: 50%; */
 }
 
 #drinkProg {
@@ -180,8 +144,6 @@ margin: 20px;
 }
 
 
-
-
 #pet1 {
     position: relative;
     z-index: -1;
@@ -191,8 +153,6 @@ margin: 20px;
     width: 345px;
     height: 440px;
     transition: 1.5s ease-in-out;
-
-
 }
 
 
@@ -206,8 +166,6 @@ margin: 20px;
     width: 345px;
     height: 440px;
     transition: 1.5s ease-in-out;
-    /* transform: rotateY(180deg); */
-
 }
 
 #pet3 {
@@ -232,10 +190,3 @@ margin: 20px;
     position: relative;
 }
 
-
-
-
-@keyframes fade {
-    0%,100% { opacity: 0 }
-    50% { opacity: 1 }
-  }
