@@ -8,8 +8,11 @@
 
 body {
     display: flex;
-    justify-content: center;
-    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 .white {
@@ -22,7 +25,10 @@ body {
 
 .lrgT {
     font-size: 28px;
+}
 
+.smllT {
+    font-size: 14px;
 }
 
 .fill {
@@ -36,67 +42,145 @@ body {
     padding-top: 20px;
 }
 
-.directors {
+/* .directors {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 margin: 20px;
-}
+} */
 
-.leftOnly {
+/* .leftOnly {
     justify-content: flex-start;
 }
 
 .rightOnly {
     justify-content: flex-end;
-}
+} */
 
 #petContainer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     box-sizing: border-box;
-    background-color: white;
-    width: fit-content;
+    /* background-color: darkolivegreen; */
+    margin-top: 60px;
+    width: 2000px;
     height: fit-content;
+    /* z-index: 3; */
 }
+
+#bgCover {
+    position: absolute;
+    background-color: darkseagreen;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+
+/* #petProtectionCover {
+    position: absolute;
+    left: 480px;
+    top: 80px;
+    background-color: crimson;
+    width: 300px;
+    height: 420px;
+    z-index: 1;
+}  */
+
 
 .petImageCont {
     position: relative;
-    top: 0px;
+    top: 30px;
     width: 150px;
     height: 150px;
     border: 1px solid rgba(0, 0, 0, 0.158);
 }
 
-.options {
+#infoCont {
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     position: relative;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     background-color: rgba(0, 0, 0, 0.436);
-    height: 140px;
-    width: fit-content;
-    top: -156px;
-    left: 245px;
-    padding: 5px;
+    height: 170px;
+    width: 150px;
+    top: 65px;
+    left: 15px;
+    /* margin: 2px; */
+    /* padding: 8px; */
+    /* padding-left: 10px; */
+    border: 1px solid rgba(0, 0, 0, 0.127);
+    border-radius: 5px;
+}
+
+#options {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.436);
+    height: 170px;
+    width: 150px;
+    top: -105px;
+    left: 180px;
+    padding-top: 8px;
+    padding-left: 8px;
+    /* padding-left: 10px; */
     border: 1px solid rgba(0, 0, 0, 0.127);
     border-radius: 5px;
 }
 
 .iconCont {
-    width:30px;
-    height: 30px;
+    /* background-color: #ff206e; */
+    width: 25px;
+    height: 25px;
+    padding: 1px;
+    /* border: 2px solid rgb(0, 0, 0); */
+    /* border-radius: 50%; */
 }
 
-.iconOptionsCont {
-    background-color: rgba(105, 105, 105, 0.558);
-    width:20px;
-    height: 20px;
-    padding: 2px;
-    border: 1px solid rgba(0, 0, 0, 0.211);
-    border-radius: 50%;
+#drinkProg {
+    background-color: rgb(120, 120, 120);
+    width: 100px;
+    height: 5px;
+    position: relative;
+    top: -20px;
+    left: 30px;
 }
+
+#eatProg {
+    background-color: rgb(120, 120, 120);
+    width: 100px;
+    height: 5px;
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+
+#codeProg {
+    background-color: rgb(120, 120, 120);
+    width: 100px;
+    height: 5px;
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+
+#cuddleProg {
+    background-color: rgb(120, 120, 120);
+    width: 100px;
+    height: 5px;
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+
+
+
 
 #pet1 {
     position: relative;
@@ -104,9 +188,11 @@ margin: 20px;
     top: 0px;
     left: 0px;
     background-color: #ff206e;
-    width: 300px;
-    height: 400px;
-    animation: ease-in-out 2s;
+    width: 345px;
+    height: 440px;
+    transition: 1.5s ease-in-out;
+
+
 }
 
 
@@ -117,8 +203,11 @@ margin: 20px;
     top: 0px;
     left: 0px;
     background-color: #fbff12;
-    width: 300px;
-    height: 400px;
+    width: 345px;
+    height: 440px;
+    transition: 1.5s ease-in-out;
+    /* transform: rotateY(180deg); */
+
 }
 
 #pet3 {
@@ -127,12 +216,26 @@ margin: 20px;
     top: 0px;
     left: 0px;
     background-color: #41ead4;
-    width: 300px;
-    height: 400px;
+    width: 345px;
+    height: 440px;
+    transition: 1.5s ease-in-out;
 }
 
-#selector {
+#selectorCont {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 345px;
+    margin: 20px;
     position: relative;
-    top: -80px;
 }
 
+
+
+
+@keyframes fade {
+    0%,100% { opacity: 0 }
+    50% { opacity: 1 }
+  }
